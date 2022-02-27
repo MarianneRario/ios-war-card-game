@@ -11,11 +11,6 @@ struct ContentView: View {
     
     /* @State - is a property wrapper that allows you to change the property through button because by default, property in view is immutable (can't be changed) */
     
-    @State var playerCard = "card5"
-    @State var cpuCard = "card9"
-    @State var playerScore = 0
-    @State var cpuScore = 0
-    
     
     var body: some View {
         
@@ -47,29 +42,6 @@ struct ContentView: View {
                 //space between cards and button
                 Spacer()
                 
-                //deal button
-                Button {
-                    //generate a random number from 2 to 14
-                    let playerRand = Int.random(in: 2...14)
-                    let cpuRand = Int.random(in: 2...14)
-                    //update the cards
-                    playerCard = "card"+String(playerRand)
-                    cpuCard = "card"+String(cpuRand)
-                    
-                    //update the score
-                    if(playerRand > cpuRand) {
-                        playerScore+=1
-                    } else if (playerRand < cpuRand){
-                        cpuScore+=1
-                    }
-                    
-                    
-                    
-                } label: {
-                    Image("dealbutton")
-                }
-
-                
                 
                 //space between deal button and HStack for scores
                 Spacer()
@@ -84,7 +56,7 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                             
-                        Text(String(playerScore))
+                        Text("0")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
@@ -99,7 +71,7 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                         
-                        Text(String(cpuScore))
+                        Text("0")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
