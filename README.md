@@ -1,4 +1,4 @@
-#WarCardGame App
+# WarCardGame App
 
 #A Card game for iOS devices using Swift Programming Language
 
