@@ -11,6 +11,11 @@ struct ContentView: View {
     
     /* @State - is a property wrapper that allows you to change the property through button because by default, property in view is immutable (can't be changed) */
     
+    @State var playerCard = "card5"
+    @State var cpuCard = "card9"
+    @State var playerScore = 0
+    @State var cpuScore = 0
+    
     
     var body: some View {
         
