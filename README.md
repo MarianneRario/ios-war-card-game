@@ -40,3 +40,6 @@ The lowest card is 2 of Cloves and the highest card is Ace. Listed below is the 
 - Queen
 - King
 - Ace
+
+## Screenshot
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/61550328/155906651-fa5f1684-9e5d-46d7-b726-2aeddedf050a.png">
