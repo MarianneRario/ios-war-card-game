@@ -61,7 +61,7 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                             
-                        Text("0")
+                        Text(String(playerScore))
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
@@ -76,7 +76,7 @@ struct ContentView: View {
                             .foregroundColor(Color.white)
                             .padding(.bottom, 10.0)
                         
-                        Text("0")
+                        Text(String(cpuScore))
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
