@@ -47,6 +47,29 @@ struct ContentView: View {
                 //space between cards and button
                 Spacer()
                 
+                //deal button
+                Button {
+                    //generate a random number from 2 to 14
+                    let playerRand = Int.random(in: 2...14)
+                    let cpuRand = Int.random(in: 2...14)
+                    //update the cards
+                    playerCard = "card"+String(playerRand)
+                    cpuCard = "card"+String(cpuRand)
+                    
+                    //update the score
+                    if(playerRand > cpuRand) {
+                        playerScore+=1
+                    } else if (playerRand < cpuRand){
+                        cpuScore+=1
+                    }
+                    
+                    
+                    
+                } label: {
+                    Image("dealbutton")
+                }
+
+                
                 
                 //space between deal button and HStack for scores
                 Spacer()
